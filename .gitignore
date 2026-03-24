@@ -1,0 +1,15 @@
+# Derlenmiş C program dosyaları (Windows/Linux/Mac)
+*.o
+*.out
+*.exe
+
+# IDE ve Editör ayar klasörleri (Görünmez kalmalı)
+.vscode/
+.idea/
+*.suo
+*.sln
+
+# Projenin çalışma sırasında oluşturduğu test/veri ve log dosyaları
+veri.csv
+veri.json
+log.txt
