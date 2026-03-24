@@ -1,60 +1,70 @@
-# 🏥 Gelişmiş Hasta Takip ve Analiz Sistemi v2.0
+🏥 Advanced Patient Tracking and Analysis System v2.0
+Samsun University Software Engineering 1st Year "Introduction to Programming" Course Project
 
-**Samsun Üniversitesi Yazılım Mühendisliği 1. Sınıf "Programlamaya Giriş" Dersi Projesi**
+This project is a comprehensive console application developed in the C programming language, based on the fundamentals of Dynamic Memory Management and File Operations (File I/O). The system (v1.0), which initially kept data only in RAM, was developed within the scope of Assignment 4 and transformed into a persistent structure (v2.0) capable of saving, reading, and logging data.
 
-Bu proje, C programlama dilinde geliştirilmiş, **Dinamik Bellek Yönetimi (Dynamic Memory)** ve **Dosya İşlemleri (File I/O)** temellerine dayanan kapsamlı bir konsol uygulamasıdır. Başlangıçta verileri sadece RAM üzerinde tutan sistem (v1.0), Ödev 4 kapsamında geliştirilerek verileri kaydedebilen, okuyabilen ve loglayan kalıcı bir yapıya (v2.0) dönüştürülmüştür.
+🚀 v2.0 Update (New Features)
+By adding "Assignment 4" requirements on top of the "Assignment 3" requirements, the project has gained the following capabilities:
 
-## 🚀 v2.0 Güncellemesi (Yeni Özellikler)
+💾 Data Persistence: Data is not lost even if the program is closed.
 
-Proje, "Ödev 3" gereksinimlerinin üzerine "Ödev 4" isterlerini ekleyerek şu yetenekleri kazanmıştır:
+📂 CSV Support (Traditional): Saves and restores data as comma-separated values (.csv) files. It is coded using the traditional method with fprintf and fscanf.
 
-* **💾 Veri Kalıcılığı (Data Persistence):** Program kapansa bile veriler kaybolmaz.
-* **📂 CSV Desteği (Geleneksel):** Verileri virgülle ayrılmış dosyalar (`.csv`) olarak kaydeder ve geri yükler. `fprintf` ve `fscanf` kullanılarak geleneksel yöntemle kodlanmıştır.
-* **🌐 JSON Desteği (Vibe Coding):** Verileri modern web standardı olan JSON formatında (`.json`) işler. Harici kütüphane kullanılmadan, **kendi yazdığım parser (ayrıştırıcı)** algoritması ile string işleme (string manipulation) yapılarak kodlanmıştır.
-* **📝 Sistem Loglama:** Programın açılışı, kapanışı, veri ekleme/silme ve dosya işlemleri tarih ve saat damgasıyla `log.txt` dosyasına otomatik kaydedilir.
+🌐 JSON Support (Vibe Coding): Processes data in JSON format (.json), the modern web standard. It is coded by performing string manipulation with my custom-written parser algorithm, without using any external libraries.
 
-## 🛠️ Teknik Özellikler
+📝 System Logging: Program startup, shutdown, data addition/deletion, and file operations are automatically recorded in the log.txt file with a date and time stamp.
 
-Bu proje aşağıdaki bilgisayar bilimleri kavramlarını içerir:
+🛠️ Technical Specifications
+This project includes the following computer science concepts:
 
-* **Dinamik Bellek Yönetimi:** `malloc`, `realloc` ve `free` ile Heap yönetimi.
-* **Struct & Pointer:** Veri yapılarını nesne yönelimli benzeri bir yapıda tutma.
-* **File I/O:** `fopen`, `fclose`, dosya modları (`w`, `r`, `a`) kullanımı.
-* **Algoritmalar:**
-    * **Bubble Sort:** Hastaları sağlık puanına göre sıralama.
-    * **Linear Search:** İsim ve aralık arama.
-    * **Custom Parsing:** JSON verisini okumak için özel string ayrıştırma.
-* **UI/UX:** ASCII tabanlı Canlı Dashboard ve Triage (Acil Durum) ekranı.
+Dynamic Memory Management: Heap management with malloc, realloc, and free.
 
-## 📸 Ekran Görüntüleri
+Struct & Pointers: Keeping data structures in an object-oriented-like architecture.
 
-### Canlı Dashboard ve Ana Menü
+File I/O: Use of fopen, fclose, and file modes (w, r, a).
+
+Algorithms:
+
+Bubble Sort: Sorting patients by health score.
+
+Linear Search: Name and range searching.
+
+Custom Parsing: Custom string parsing to read JSON data.
+
+UI/UX: ASCII-based Live Dashboard and Triage (Emergency) screen.
+
+📸 Screenshots
+Live Dashboard and Main Menu
 <img width="422" height="561" alt="Ekran görüntüsü 2025-12-22 224712" src="https://github.com/user-attachments/assets/58ccfba8-6d7f-49fe-97ca-d24e322e5ffb" />
 
-
-### Acil Durum (Triage) Filtresi
+Triage (Emergency) Filter
 <img width="446" height="427" alt="image" src="https://github.com/user-attachments/assets/c9332859-bdfe-4f5d-a58a-c7703aa6bde9" />
 
+JSON and CSV Outputs
+Sample data files generated when the project is run:
 
-### JSON ve CSV Çıktıları
-Proje çalıştırıldığında oluşturulan örnek veri dosyaları:
-- `veri.csv`: Excel uyumlu veri saklama.
-- `veri.json`: Web uyumlu veri saklama.
-- `log.txt`: Sistem hareket dökümü.
+veri.csv: Excel-compatible data storage.
 
-## 📥 Kurulum ve Çalıştırma
+veri.json: Web-compatible data storage.
 
-1.  Projeyi klonlayın veya zip olarak indirin.
-2.  `main.c` dosyasını bir C derleyicisinde (Dev-C++, GCC, VS Code) açın.
-3.  Derleyin ve çalıştırın.
-4.  Menüden **9** veya **11**'i seçerek ilk dosya kaydınızı oluşturun.
+log.txt: System activity log.
 
-## 🙏 Teşekkür
+📥 Installation and Execution
+Clone the project or download it as a zip file.
 
-Bu projede vizyonlarıyla yol gösteren ve **Vibe Coding** (Yapay Zeka ile Hibrit Kodlama) metodolojisini öğreten değerli hocalarım:
-* **Dr. Öğr. Üyesi Nurettin Şenyer**
-* **Öğr. Gör. İlker Gür**'e teşekkür ederim.
+Open the main.c file in a C compiler (Dev-C++, GCC, VS Code).
 
----
-*Geliştirici: Utkuhan AKAR*
-*Tarih: 22 Aralık 2025*
+Compile and run.
+
+Create your first file record by selecting 9 or 11 from the menu.
+
+🙏 Acknowledgements
+I would like to thank my esteemed professors who guided me with their vision and taught me the Vibe Coding (Hybrid Coding with AI) methodology in this project:
+
+Asst. Prof. Dr. Nurettin Şenyer
+
+Lecturer İlker Gür
+
+Developer: Utkuhan AKAR
+Date: December 22, 2025
+Last Edited: March 24, 2026
