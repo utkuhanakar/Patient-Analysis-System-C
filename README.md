@@ -31,7 +31,7 @@ Struct & Pointers: Keeping data structures in an object-oriented-like architectu
 
 File I/O: Use of fopen, fclose, and file modes (w, r, a).
 
-# 🤖 Algorithms:
+# Algorithms:
 
 - Bubble Sort: Sorting patients by health score.
 
