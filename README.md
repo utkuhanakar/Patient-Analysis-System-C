@@ -12,6 +12,9 @@ To get an idea about the project's user interface and features, you can check ou
 <img src="https://github.com/user-attachments/assets/c9332859-bdfe-4f5d-a58a-c7703aa6bde9" alt="Triage (Emergency) Filter" width="45%" />
 </p>
 
+---------
+
+
 🛠️ Technical Specifications and v2.0 Update
 This project includes the following advanced computer science concepts, and with the v2.0 update, it has gained these capabilities:
 
